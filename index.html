@@ -37,35 +37,36 @@
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
-
   <div class="main-banner" id="top">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="owl-carousel owl-banner">
-            <div class="item item-1">
-              <div class="header-text">
+          <div class="contact-us-content"  style="padding-top: 10px;">
+            <div class="responsive-container">
+              <div class="responsive-item">
+                <div class="header-text" style="text-align: center;">
                 
-                <h2>Your Job Search Stops here!</h2>
-                <p>The one stop place for your all your Job needs. Build ATS friendly Resume and generate Cover Letters!</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Let's Go!</a>
+                  <h1 style="color: white;text-align: center;">Your Job Search Stops here!</h1><br>
+                  <p style="color: white;text-align: center;">The one stop place for your all your Job needs. Build ATS friendly Resume and generate Cover Letters!</p>
+                  <br>
+                  <div class="buttons">
+                    <div class="main-button">
+                      <a href="#">Let's Go!</a>
+                    </div>
+                    
                   </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> How to do it?</a>
-                  </div>
-                </div>
               </div>
-            </div>
-            
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+              <div class="responsive-item">
 
+                  
+              </div>
+
+            </div>
+          </div>
+        
+      </div>
+  </div>
+  </div>
+  </div>
   <section class="section courses" id="courses" >
     <div class="container">
       <div class="row">
@@ -73,12 +74,6 @@
           <div class="section-heading">
             
             <h2>Search Jobs</h2>
-            <div class="search-input">
-                <form id="search" action="#">
-                  <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                  <i class="fa fa-search"></i>
-                </form>
-          </div>
         </div>
       </div>
       <ul class="event_filter">
@@ -115,25 +110,25 @@
             <div class="row">
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="15000" data-speed="1000"></h2>
+                  <h2>2000</h2>
                    <p class="count-text ">Professonals Placed</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="8000" data-speed="1000"></h2>
+                  <h2>5000</h2>
                   <p class="count-text ">Resumes Created</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="5000" data-speed="1000"></h2>
+                  <h2>3000</h2>
                   <p class="count-text ">Cover Letter Generated</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter end">
-                  <h2 class="timer count-title count-number" data-to="5" data-speed="1"></h2>
+                  <h2>4</h2>
                   <p class="count-text ">Years of Experience</p>
                 </div>
               </div>
@@ -184,9 +179,6 @@
       </div>
     </div>
   </div>
-
-
-
   <footer>
     <div class="container">
       <div class="col-lg-12">
@@ -198,9 +190,19 @@
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
- 
-
+  
   <script>
+    (function ($) {
+      // Menu Dropdown Toggle
+      if($('.menu-trigger').length){
+        $(".menu-trigger").on('click', function() {	
+          $(this).toggleClass('active');
+          $('.header-area .nav').slideToggle(200);
+        });
+      }
+    })(window.jQuery);
+    </script>
+ <script>
 
 const jobs = [
   {

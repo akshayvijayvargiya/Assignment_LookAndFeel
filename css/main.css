@@ -8,7 +8,6 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
-
 .clearfix:after {
   content: ".";
   display: block;
@@ -17,55 +16,44 @@ figure, header, nav, section, article, aside, footer, figcaption {
   line-height: 0;
   height: 0;
 }
-
 .clearfix {
   display: inline-block;
 }
-
 html[xmlns] .clearfix {
   display: block;
 }
-
 * html .clearfix {
   height: 1%;
 }
-
 ul, li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
 header, nav, section, article, aside, footer, hgroup {
   display: block;
 }
-
 * {
   box-sizing: border-box;
 }
-
 html, body {
   font-family: 'Poppins', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 a {
   text-decoration: none !important;
 }
-
 h1, h2, h3, h4, h5, h6 {
   color: #1e1e1e;
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 700;
 }
-
 ul {
   margin-bottom: 0px;
 }
-
 p {
   font-size: 14px;
   line-height: 28px;

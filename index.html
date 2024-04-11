@@ -15,7 +15,6 @@
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
                         <h1>Jobs.co</h1>
                     </a>
@@ -25,18 +24,15 @@
                       <li class="scroll-to-section"><a href="aboutus.html">About Us</a></li>
                       <li class="scroll-to-section"><a href="resume.html" class="active" style="background-color:white;color:black;">Build Resume</a></li>
                       <li class="scroll-to-section"><a href="coverletter.html" class="active" style="background-color:white;color:black;">Build Cover Letter</a></li>
-
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
-                    <!-- ***** Menu End ***** -->
                 </nav>
             </div>
         </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
   <div class="main-banner" id="top">
     <div class="container">
       <div class="row">
@@ -44,25 +40,17 @@
             <div class="responsive-container">
               <div class="responsive-item">
                 <div class="header-text" style="text-align: center;">
-                
                   <h1 style="color: white;text-align: center;">Your Job Search Stops here!</h1><br>
                   <p style="color: white;text-align: center;">The one stop place for your all your Job needs. Build ATS friendly Resume and generate Cover Letters!</p>
                   <br>
                   <div class="buttons">
                     <div class="main-button">
                       <a href="#">Let's Go!</a>
-                    </div>
-                    
+                    </div> 
                   </div>
               </div>
-              <div class="responsive-item">
-
-                  
-              </div>
-
             </div>
           </div>
-        
       </div>
   </div>
   </div>
@@ -72,7 +60,6 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            
             <h2>Search Jobs</h2>
         </div>
       </div>
@@ -90,18 +77,14 @@
           <a href="#!" data-filter=".wordpress">Data Analyst Jobs</a>
         </li>
       </ul>
-      
     </div>
     <div class="section events" id="events">
         <div class="container">
           <div class="row" id="parent">
-            
-            
           </div>
         </div>
       </div>
   </section>
-
   <div class="section fun-facts">
     <div class="container">
       <div class="row">
@@ -161,7 +144,6 @@
             </div>
             </div>
         </div>
-        
       </div>
     </div>
   </div>
@@ -172,11 +154,7 @@
       </div>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
-  
   <script>
     (function ($) {
       // Menu Dropdown Toggle
@@ -263,20 +241,12 @@ function populateJobs(jobs) {
         </div>
       </div>
     `;
-    
-    // Convert the HTML string to a DOM element
     const range = document.createRange();
     const documentFragment = range.createContextualFragment(jobElement);
     container.appendChild(documentFragment);
   });
 }
-
 populateJobs(jobs);
-
-
-
-
-  </script>
-
+</script>
   </body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="css/fontawesome.css">
+        <link rel="stylesheet" href="css/main.css">
+    <title>Dashboard</title>
+  </head>
+<body>
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <h1>Jobs.co</h1>
+                    </a>
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="index.html">Home</a></li>
+                      <li class="scroll-to-section"><a href="dashboard.html">Dashboard</a></li>
+                      <li class="scroll-to-section"><a href="aboutus.html">About Us</a></li>
+                      <li class="scroll-to-section"><a href="resume.html" class="active" style="background-color:white;color:black;">Build Resume</a></li>
+                      <li class="scroll-to-section"><a href="coverletter.html" class="active" style="background-color:white;color:black;">Build Cover Letter</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <div class="main-banner" id="top" style="padding-top: 10px;">
+  </div>
+  <div class="contact-us section" id="contact" style="margin-top:10px;">
+    <div class="container">
+      <div class="row">
+          <div class="contact-us-content">
+            <form id="contact-form" action="" method="post">
+              <div class="row">
+                <h2 style="color: white;text-align: center;padding-bottom: 20px;">Dashboard</h2>
+                <div class="col-lg-4">
+                    <div class="team-member" style="margin:5px">
+                        <div class="main-content" style="padding-top: 20px;padding-bottom: 20px;color: white;">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div style="width: 30%; padding: 20px; box-sizing: border-box;text-align: center;">
+                                    <i class="fa fa-calendar" style="font-size:48px;color:black"></i>
+                                </div>
+                                <div style="width: 70%; padding: 20px; box-sizing: border-box;">
+                                    <h6 style="text-align: right;">Interview Given</h6>
+                                    <h3 style="text-align: right;">85</h3>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member" style="margin:5px">
+                        <div class="main-content" style="padding-top: 20px;padding-bottom: 20px;color: white;">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div style="width: 30%; padding: 20px; box-sizing: border-box;text-align: center;">
+                                    <i class="fas fa-business-time" style="font-size:48px;color:black"></i>
+                                </div>
+                                <div style="width: 70%; padding: 20px; box-sizing: border-box;">
+                                    <h6 style="text-align: right;">Application Sent</h6>
+                                    <h3 style="text-align: right;">196</h3>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member" style="margin:5px">
+                        <div class="main-content" style="padding-top: 20px;padding-bottom: 20px;color: white;">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div style="width: 30%; padding: 20px; box-sizing: border-box;text-align: center">
+                                    <i class="fas fa-user-circle" style="font-size:48px;color:black"></i>
+                                </div>
+                                <div style="width: 70%; padding: 20px; box-sizing: border-box;">
+                                    <h6 style="text-align: right;">Profile Views</h6>
+                                    <h3 style="text-align: right;">2,490</h3>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button" onclick="generatePDF()">Generate Cover Letter</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2024 Jobs.Co. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+<!-- Scrpits to create PDF out of the form -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</html>

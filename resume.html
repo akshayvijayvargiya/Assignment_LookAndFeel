@@ -4,16 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <title>Resume Builder</title>
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
 <body>
   <header class="header-area header-sticky">
@@ -230,9 +226,15 @@
   </footer>
 </body>
 <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <!-- https://advicement.io/dynamic-documents-api/dashboard > 
-  -->
+<script>
+  (function ($) {
+    // Menu Dropdown Toggle
+    if($('.menu-trigger').length){
+      $(".menu-trigger").on('click', function() {	
+        $(this).toggleClass('active');
+        $('.header-area .nav').slideToggle(200);
+      });
+    }
+  })(window.jQuery);
+  </script>
 </html>

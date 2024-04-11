@@ -1314,3 +1314,19 @@ body {
     width: 95%;
   }
 }
+.responsive-container {
+  display: flex;
+  flex-direction: row; /* This will place the divs side by side */
+  justify-content: space-around;
+  align-items: center;
+}
+.responsive-item {
+  flex: 1; /* Make items flexible to fill the container */
+  margin: 5px;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .responsive-container {
+    flex-direction: column; /* Stack items on top of each other */
+  }
+}

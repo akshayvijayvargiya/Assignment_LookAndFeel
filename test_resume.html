@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with OpenAI</title>
+</head>
+<body>
+    <h1>ChatGPT API Test</h1>
+    <input type="text" id="userInput" placeholder="Type your message here" />
+    <button onclick="sendMessage()">Compile LaTeX</button>
+    <p>Response:</p>
+    <div id="response"></div>
+
+    <script>
+        async function sendMessage() {
+            const input = document.getElementById('userInput').value;
+            const responseContainer = document.getElementById('response');
+
+            try {
+                const msg = "\\documentclass{article}\\begin{document}Hello, World!\\end{document}";
+                const response = await fetch('https://api.advicement.io/v1/templates/pub-tex-to-pdf-with-pdflatex-v1/compile', {
+                    method: 'POST',
+                    
+                    headers: {
+                        'Adv-Security-Token': '68116ed5120fb953ea522cc384ea25b2b01fd396da58db3143af98fb6d2ffab4', 
+                        'Access-Control-Allow-Origin' : '*'
+                    },
+                    body: JSON.stringify({
+                        texFileContent: msg,
+                        image1: ""
+                    })
+                });
+
+                const data = await response.json();
+                responseContainer.innerHTML = JSON.stringify(data, null, 2);
+            } catch (error) {
+                console.error('Error:', error);
+                responseContainer.innerHTML = 'Failed to fetch data. See console for more details.';
+            }
+        }
+    </script>
+</body>
+</html>

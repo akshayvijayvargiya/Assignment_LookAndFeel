@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
-        
-        <title>Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Dashboard</title>
   </head>
   <style>
     .contact-us:before {
@@ -120,7 +118,6 @@ border-bottom-right-radius: 500px;
                     </div>
                   </div>
             </div>
-            
             <div class="col-lg-4" style="margin-top: 30px;">
               <div class="team-member" style="margin:5px;background-color:white;border-radius: 20%;">
                   <div class="main-content" style="padding-top: 20px;padding-bottom: 20px;color: white;background-color:white;">
@@ -133,7 +130,6 @@ border-bottom-right-radius: 500px;
                             <img src="img/skills.png" alt="Akshay Vijayvergiya" style="position: static;transform: translateX(0px);border-radius: 0%;">
                             </div>
                             <div class="main-content" style="padding-top: 10px;padding-bottom: 10px;color: white;background-color:#f1f0fe;">
-                              
                                 <p style="text-align: center;color: black;"><b>Recent Activities</b></p>
                                 <ul>
                                   <li><p style="text-align: left;color: black;"><i class="fa fa-refresh"></i>  You have 3 new Profile Views</p></li>
@@ -141,12 +137,10 @@ border-bottom-right-radius: 500px;
                                   <li><p style="text-align: left;color: black;"><i class="fa fa-refresh"></i>  Your application has been Accepted</p></li>
                                 </ul>
                           </div>
-                          
                           </div>
                           </div>
                       </div>
                   </div>
-
                   <div class="col-lg-8" style="margin-top: 30px;">
                     <div class="team-member" style="margin:5px;background-color:white;border-radius: 20%;">
                         <div class="main-content" style="padding-top: 20px;padding-bottom: 20px;color: white;background-color:white;">
@@ -158,12 +152,9 @@ border-bottom-right-radius: 500px;
                                   <canvas id="bar-chart" width="800" height="450"></canvas>
                                   </div>
                                   <div class="main-content" style="padding-top: 10px;padding-bottom: 10px;color: white;background-color:#f1f0fe;">
-                                    
                                       <p style="text-align: center;color: black;"><b>Profile Views has been increased significantly. Good Job!</b></p>
                                       <p style="text-align: center;color: black;"><b>Keep Going! 👍</b></p>
-
                                 </div>
-                                
                                 </div>
                                 </div>
                             </div>
@@ -174,7 +165,6 @@ border-bottom-right-radius: 500px;
                                   <div style=" justify-content: space-between;">
                                       <div style="width: 100%; padding: 10px; box-sizing: border-box;text-align: center;">
                                         <h4 style="text-align: center;color: black;">Portfolios</h4>
-
                                         <p style="text-align: center;color: black;">
                                           <a href=""><i class="fa fa-github" style="font-size:40px"></i></a>&nbsp;&nbsp;&nbsp;
                                           <a href=""><i class="fa fa-facebook" style="font-size:40px"></i></a>&nbsp;&nbsp;&nbsp;
@@ -187,13 +177,8 @@ border-bottom-right-radius: 500px;
                                         <p style="text-align: center;color: black;font-size: 20px;">📩  akshayvv@gmail.com</p>
                                         <br>
                                         <p style="text-align: center;color: black;font-size: 20px;">📩  Tampa, FL, US</p>
-                                       
-                                      
-                                          
-                                          
                                         </p>
                                       </div>
-                                      
                                       </div>
                                       </div>
                                   </div>
@@ -204,9 +189,6 @@ border-bottom-right-radius: 500px;
                             <div style="display: flex; justify-content: space-between;">
                               <div style="width: 30%; box-sizing: border-box;padding: 20px;text-align: center;">
                                 <h5>Application Trend</h5>
-
-
-
                                 <br>
                                 <p style="text-align: left;"><i class="fa fa-bookmark" style="font-size:36px;color:#3e95cd"></i>&nbsp;&nbsp;&nbsp;Applied</p>
                                 <p style="text-align: left;"><i class="fa fa-bookmark" style="font-size:36px;color:#8e5ea2"></i>&nbsp;&nbsp;&nbsp;Viewed</p>
@@ -222,7 +204,6 @@ border-bottom-right-radius: 500px;
                 </div>
               </div>
               </div>
-              
             </form>
           </div>
       </div>
@@ -236,57 +217,7 @@ border-bottom-right-radius: 500px;
     </div>
   </footer>
 </body>
-<!-- Scrpits to create PDF out of the form -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
-<script>
-  new Chart(document.getElementById("bar-chart"), {
-    type: 'bar',
-    data: {
-      labels: ["Jan 2024", "Feb 2024", "March 2024", "April 2024", "May 2024"],
-      datasets: [
-        {
-          label: "Views",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [49, 55, 100, 150, 189]
-        }, {
-          label: "Views",
-          type: "line",
-          borderColor: "rgba(255,221,50,1)",
-          data: [49, 55, 100, 150, 189],
-          fill: true
-        }
-      ]
-    },
-    options: {
-      legend: { display: false },
-      title: {
-        display: true,
-        text: 'Profile Views by Recruiters'
-      }
-    }
-});
-
-new Chart(document.getElementById("doughnut-chart"), {
-    type: 'doughnut',
-    data: {
-      labels: ["Applied", "Viewed" , "Converted"],
-      datasets: [
-        {
-          label: "#",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
-          data: [1000, 350, 50]
-        }
-      ]
-    },
-    options: {
-      title: {
-        display: true,
-        text: 'Application Trend'
-      }
-    }
-});
-</script>
+<script src="js/main.js"></script>
 </html>

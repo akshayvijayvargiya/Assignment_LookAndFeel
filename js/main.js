@@ -90,7 +90,7 @@ function populateJobs(jobs) {
 				  <h6 class="pay">${job.payRange}</h6>
 				</li>
 				  <li>
-				  <button href="" style="  border: none;
+				  <button id="openPopup" style="  border: none;
 				  height: 50px;
 				  font-size: 14px;
 				  font-weight: 600;

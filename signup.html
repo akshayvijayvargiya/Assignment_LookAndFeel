@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
-    <title>Cover Letter</title>
+   <!-- Bootstrap core CSS -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/main.css">
+    <title>Sign Up</title>
   </head>
 <body>
   <header class="header-area header-sticky">
@@ -22,7 +22,7 @@
                     <ul class="nav">
                       <li class="scroll-to-section"><a href="index.html">Home</a></li>
                       <li class="scroll-to-section"><a href="dashboard.html">Dashboard</a></li>
-                      <li class="scroll-to-section"><a href="aboutus.html">About Us</a></li>
+                      <li class="scroll-to-section"><a href="aboutus.html" >About Us</a></li>
                       <li class="scroll-to-section"><a href="resume.html" class="active" style="background-color:white;color:black;">Build Resume</a></li>
                       <li class="scroll-to-section"><a href="coverletter.html" class="active" style="background-color:white;color:black;">Build Cover Letter</a></li>
                     </ul>   
@@ -42,56 +42,53 @@
           <div class="contact-us-content">
             <form id="contact-form" action="" method="post">
               <div class="row">
-                <h2 style="color: white;text-align: center;padding-bottom: 20px;">Generate Cover Letter</h2>
-                <h5 style="color: white;text-align: center;padding-bottom: 40px;">Just fill in the details below and get the customized Cover Letter in minutes...</h5>
+                <h3 style="color: white;text-align: center;padding-bottom: 20px;">Create Your Profile</h3>
+                
+                <h4 style="color: white;text-align: left;padding-bottom: 20px;">Details:</h4>
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                    <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                     <fieldset>
-                      <input type="name" id="company" placeholder="Company Name..." autocomplete="on" required>
+                      <input type="name" name="name" id="email" placeholder="Email.." autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-2">
+                    <fieldset>
+                      <input type="name" name="name" id="phone" placeholder="Code.." autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-10">
+                    <fieldset>
+                      <input type="name" name="name" id="phone" placeholder="Mobile Number.." autocomplete="on" required>
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <input type="name"  id="position" placeholder="Position..." autocomplete="on" required>
+                      <input type="name" name="name" id="email" placeholder="LinkedIn URL" autocomplete="on" required>
                     </fieldset>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-lg-4">
                     <fieldset>
-                      <input type="name" id="phone" placeholder="Your Phone..." autocomplete="on" required>
+                      <input type="name" name="name" id="email" placeholder="Country.." autocomplete="on" required>
                     </fieldset>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-lg-4">
                     <fieldset>
-                      <input type="name" id="address" placeholder="Your Address..." autocomplete="on" required>
+                      <input type="name" name="name" id="email" placeholder="State.." autocomplete="on" required>
                     </fieldset>
                   </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input type="name" name="name" id="email" placeholder="City.." autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                    <fieldset>
-                      <input type="name" id="hiringmanager" placeholder="Hiring manager Name (if Any)..." autocomplete="on" required>
-                    </fieldset>
-                  </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <textarea name="message" id="jd" placeholder="Put Job Description.."></textarea>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" id="yourself" placeholder="About Yourself..."></textarea>
-                    </fieldset>
-                  </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <button type="submit" id="form-submit" class="orange-button" onclick="generatePDF()"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Generate Cover Letter</button>
+                    <button type="submit" id="form-submit" class="orange-button"><i class="fa fa-heart"></i>&nbsp;&nbsp;Sign Up</button>
                   </fieldset>
                 </div>
               </div>

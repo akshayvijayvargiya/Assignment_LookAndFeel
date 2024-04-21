@@ -1348,3 +1348,27 @@ body {
 .progress-bar::before {
   content: "75%";
 }
+
+.generate-cover-letter {
+  background-color: white; /* Adjust the color to match your specific purple */
+  color: #5a4db2;
+  padding: 15px 20px;
+  text-align: center;
+  display: inline-block; /* Makes the h2 behave more like a button */
+  border-radius: 25px; /* Gives the rounded corners */
+  cursor: pointer; /* Changes the mouse pointer on hover */
+  font-size: 16px; /* Adjust the font size as necessary */
+  border: none; /* Removes any default border */
+  margin: 0; /* Removes default margin from h tags */
+}
+
+  /* Optionally, add hover effects */
+  .generate-cover-letter:hover {
+      background-color: white; /* Darker purple shade for hover */
+  }
+
+  /* Focus styles to improve accessibility */
+  .generate-cover-letter:focus {
+      outline: 2px solid #5a4db2; /* Adds an outline on focus */
+      outline-offset: 2px;
+  }

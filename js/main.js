@@ -162,3 +162,13 @@ new Chart(document.getElementById("doughnut-chart"), {
       }
     }
 });
+
+function showLoader()
+{
+  document.getElementById('loadgif').style.display = 'inline';
+}
+
+function showLoader1()
+{
+  document.getElementById('loadgif1').style.display = 'inline';
+}

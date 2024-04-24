@@ -12,7 +12,7 @@
   </head>
   <style>
     .contact-us:before {
-position: absolute;
+position: absolute;  
 top: 0;
 bottom: 0;
 left: 0;
@@ -203,6 +203,43 @@ border-bottom-right-radius: 500px;
                         </div>
                       </div>
                 </div>
+
+                <div class="col-lg-6" style="margin-top: 30px;">
+                    <div class="team-member" style="margin:5px;background-color:white;border-radius: 20%;">
+                        <div class="main-content" style="padding-top: 20px;padding-bottom: 20px;color: white;background-color:white;">
+                            <div style=" justify-content: space-between;">
+                                <div style="width: 100%; padding: 20px; box-sizing: border-box;text-align: center;">
+                                  <h3 style="text-align: center;color: black;">Job Distribution</h3>
+                                </div>
+                                <div style="width: 100%; padding: 20px; box-sizing: border-box;text-align: center;">
+                                  <canvas id="radar-chart" width="800" height="600"></canvas>
+                                  </div>
+                                  <div class="main-content" style="padding-top: 10px;padding-bottom: 10px;color: white;background-color:#f1f0fe;">
+                                    <p style="text-align: center;color: black;"><b>Your Priorities as per Trend:</b></p>
+                                    <p style="text-align: center;color: black;"><b>1. SDE</b></p>
+                                    <p style="text-align: center;color: black;"><b>1. Data Scientist</b></p>
+                    
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6" style="margin-top: 30px;">
+                    <div class="team-member" style="margin:5px;background-color:white;border-radius: 20%;">
+                        <div class="main-content" style="padding-top: 20px;padding-bottom: 20px;color: white;background-color:white;">
+                            <div style=" justify-content: space-between;">
+                                <div style="width: 100%; padding: 20px; box-sizing: border-box;text-align: center;">
+                                  <h3 style="text-align: center;color: black;">Job Availability</h3>
+                                </div>
+                                <div style="width: 100%; padding: 20px; box-sizing: border-box;text-align: center;">
+                                  <canvas id="bubble-chart" width="800" height="800"></canvas>
+                                  </div>
+                                  
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                 <h4 style="text-align: center;padding:20px;margin-top:20px">My Applies</h4>
                 <div class="col-lg-12" style="background-color: white;border-radius: 20px;padding:40px">
                   <section class="section courses" id="courses" >
@@ -235,6 +272,7 @@ border-bottom-right-radius: 500px;
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
 <script src="js/main.js"></script>
 <script>
   viewCharts();

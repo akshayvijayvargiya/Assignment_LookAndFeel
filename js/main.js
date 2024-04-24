@@ -193,6 +193,114 @@ function populateJobs() {
 			}
 		}
 	}); 
+
+	new Chart(document.getElementById("radar-chart"), {
+		type: 'radar',
+		data: {
+		  labels: ["SDE", "Data Analyst", "Data Scientist", "Web Developer", "Business Analyst"],
+		  datasets: [
+			{
+				label: "Feb 2024",
+				fill: true,
+				backgroundColor: "rgba(179,181,197,0.2)",
+				borderColor: "rgba(179,181,198,1)",
+				pointBorderColor: "#fff",
+				pointBackgroundColor: "rgba(179,181,198,1)",
+				data: [50, 10,20,0,39]
+			  },
+			  {
+				label: "Mar 2024",
+				fill: true,
+				backgroundColor: "rgba(75, 192, 192, 0.2)", // Green
+				borderColor: "rgba(75, 192, 192, 1)", // Green
+				pointBorderColor: "#fff", // White
+				pointBackgroundColor: "rgba(75, 192, 192, 1)", // Green
+				data: [60, 13, 50	, 7, 14]
+			}
+			, {
+			  label: "Apr 2024",
+			  fill: true,
+			  backgroundColor: "rgba(255,99,132,0.2)",
+			  borderColor: "rgba(255,99,132,1)",
+			  pointBorderColor: "#fff",
+			  pointBackgroundColor: "rgba(255,99,132,1)",
+			  pointBorderColor: "#fff",
+			  data: [40, 40,30,10,10]
+			}
+		  ]
+		},
+		options: {
+		  title: {
+			display: true,
+			text: 'Distribution in % of Jobs Applied'
+		  }
+		}
+	});
+
+	new Chart(document.getElementById("bubble-chart"), {
+		type: 'bubble',
+		data: {
+		  labels: "Africa",
+		  datasets: [
+			{
+			  label: ["San Francisco"],
+			  backgroundColor: "rgba(255,221,50,0.2)",
+			  borderColor: "rgba(255,221,50,1)",
+			  data: [{
+				x: 150000,
+				y: 200000,
+				r:40
+			  }]
+			}, {
+			  label: ["Atlanta"],
+			  backgroundColor: "rgba(60,186,159,0.2)",
+			  borderColor: "rgba(60,186,159,1)",
+			  data: [{
+				x: 110000,
+				y: 100000,
+				r: 20
+			  }]
+			}, {
+			  label: ["New york"],
+			  backgroundColor: "rgba(0,0,0,0.2)",
+			  borderColor: "#000",
+			  data: [{
+				x: 160000,
+				y: 260000,
+				r: 10
+			  }]
+			}, {
+			  label: ["Dallas"],
+			  backgroundColor: "rgba(193,46,12,0.2)",
+			  borderColor: "rgba(193,46,12,1)",
+			  data: [{
+				x: 120000,
+				y: 200000,
+				r: 25
+			  }]
+			}
+		  ]
+		},
+		options: {
+		  title: {
+			display: true,
+			text: 'Job Availability across Locations'
+		  }, scales: {
+			yAxes: [{ 
+			  scaleLabel: {
+				display: true,
+				labelString: "Jobs"
+			  }
+			}],
+			xAxes: [{ 
+			  scaleLabel: {
+				display: true,
+				labelString: "salary"
+			  }
+			}]
+		  }
+		}
+	});
 }
 
 function showLoader()
